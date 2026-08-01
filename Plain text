@@ -1,0 +1,36 @@
+value-vibe/
+│
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── auth/
+│   │   ├── core/
+│   │   ├── database/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routers/
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   └── main.py
+│   │
+│   ├── tests/
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   └── .env.example
+│
+├── flutter_app/
+│
+├── nginx/
+│
+├── docs/
+│
+├── scripts/
+│
+├── .github/
+│
+├── docker-compose.yml
+│
+├── README.md
+│
+└── PROJECT_ROADMAP.md
