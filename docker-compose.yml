@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+
+  api:
+
+    build: ./backend
+
+    container_name: value_vibe_api
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - backend/.env.example
+
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+
+    image: postgres:16
+
+    container_name: value_vibe_postgres
+
+    environment:
+
+      POSTGRES_DB: valuevibe
+
+      POSTGRES_USER: valuevibe
+
+      POSTGRES_PASSWORD: valuevibe
+
+    ports:
+
+      - "5432:5432"
+
+  redis:
+
+    image: redis:7
+
+    container_name: value_vibe_redis
+
+    ports:
+
+      - "6379:6379"
