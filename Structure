@@ -1,0 +1,18 @@
+value-vibe/
+│
+├── .gitignore
+├── LICENSE
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── CHANGELOG.md
+├── SECURITY.md
+├── .editorconfig
+├── .gitattributes
+├── .pre-commit-config.yaml
+├── Makefile
+│
+├── backend/
+│   ├── pyproject.toml
+│   ├── requirements.txt
+│   ├── requirements-dev.txt
+│   └── .env.example
